@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cudy świata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ 
+  <div id="header">
+    <div id="logo">    
+      <img id="logo-img" src="img/380.png" alt="samolot">
+      <h1 id="logo-header">7</h1>
+      <h1 id="logo-header2">cudów</h1>
+      <h1 id="logo-header3">świata</h1>
+    </div>
+
+    <h1 id="header-h1">Siedem najlepszych samolotów</h1>
+  </div>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Główna</a>
+        <a href="B737.html">Boeing 737</a>
+        <a href="A320.html">Airbus A320</a>
+        <a href="A380.html">Airbus A380</a>
+        <a href="F18.html">F/A-18 Hornet</a>
+        <a href="Tu154.html">Tu-154M</a>
+        <a href="B747.html">Boeing 747</a>
+        <a href="DC.html">DC-10</a>
+        <a href="javascript:void(0);" class="icon" onclick="change()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div id="plane" style="min-height: 970px;">
+        <h1>Historia</h1>
+
+        <p class="plane-desc">Ludzie od niepamiętnych czasów marzyli o lataniu. Na podstawie obserwacji ptaków Leonardo da Vinci (1452–1519) zaprojektował pierwszą lotnię. Pionierzy latania, tacy jak Niemiec Otto Lilienthal (1848–1896), udowodnili, że szybowiec może wynieść człowieka w powietrze. <br> <br> </p>
+
+        <img id="plane-img" src="img/first.png" alt="pierwszy lot">
+
+          <p class="plane-desc">Pod koniec XIX w. wielu wynalazców próbowało skonstruować samolot, czyli szybowiec z napędem. Udało się to dwóm Amerykanom braciom Orville’owi (1871–1948) i Wilburowi (1867–1912) Wrightom, którzy zbudowali samolot poruszany silnikiem tłokowym i w 1903 roku dokonali pierwszego kontrolowanego przelotu. Trwał on 12 sekund. Tego samego dnia bracia dokonali kolejnych trzech przelotów, w których samolot przeleciał 270 metrów, a najdłuższy lot trwał 59 sekund. Ten rok uznaje się za początek ery samolotów. Bracia Wright nie byli jednak pierwszymi, którzy zasłużyli się na polu budowy samolotów. Pierwszym człowiekiem, o którym można powiedzieć, że podróżował na pokładzie samolotu, był Clément Ader (1841–1925), który wzniósł się maszyną napędzaną silnikiem parowym. <br> <br>
+          
+          Pierwsze prace nad silnikiem odrzutowym prowadzono w latach 30 XX wieku. Silniki tłokowe okazały się niezbyt przydatne przy dużych prędkościach oraz na znacznych wysokościach, gdzie powietrze jest rozrzedzone. Potrzebny był nowy typ silnika. Już w latach 30 XX w. brytyjski inżynier Frank Whittle (1907–1996) opatentował projekt silnika odrzutowego, ale pierwszym odrzutowcem był niemiecki Heinkel He 178, poddany próbom w 1939 roku. Brytyjskie i amerykańskie odrzutowce pojawiły się niedługo potem, w czasie drugiej wojny światowej. Dzisiejsze tego typu samoloty mogą pokonać barierę prędkości dźwięku. <br> <br>
+          
+          Polską nazwę „samolot” wprowadził Władysław Umiński.</p>
+      </div>
+
+      <div id="showcase">
+        <h1 id="showcase-header">Galeria</h1>
+
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 7</div>
+              <img src="img/B737.png" style="width:100%" alt="Boeing 737">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 7</div>
+              <img src="img/A320.png" style="width:100%" alt="Airbus A320">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">3 / 7</div>
+              <img src="img/A380.png" style="width:100%" alt="Airbus A380">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">4 / 7</div>
+              <img src="img/F18.png" style="width:100%" alt="F/A-18 Hornet">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">5 / 7</div>
+              <img src="img/Tu154.png" style="width:100%" alt="Tupolev Tu154M">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">6 / 7</div>
+              <img src="img/B747.png" style="width:100%" alt="Boeing 747">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 7</div>
+              <img src="img/DC.png" style="width:100%" alt="Mcdonnell Douglas DC-10">
+          </div>
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="img/B737.png" style="width:100%" onclick="currentSlide(1)" alt="Boeing 737">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/A320.png" style="width:100%" onclick="currentSlide(2)" alt="Airbus A320">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/A380.png" style="width:100%" onclick="currentSlide(3)" alt="Airbus A380">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/F18.png" style="width:100%" onclick="currentSlide(4)" alt="F/A-18 Hornet">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/Tu154.png" style="width:100%" onclick="currentSlide(5)" alt="Tupolev Tu154M">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/B747.png" style="width:100%" onclick="currentSlide(6)" alt="Boeing 747">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/DC.png" style="width:100%" onclick="currentSlide(7)" alt="Mcdonnell Douglas DC-10">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="opinion">
+          <h1 id="opinion-header">Podziel się swoją opinią!</h1>
+
+          <form id="form">   
+            <label for="imie">Imię: </label> <br>
+            <input class="input-form" type="text" id="imie" maxlength="30"> <br> <br>
+    
+            <label for="nazwisko">Nazwisko*: </label> <br>
+            <input class="input-form" type="password" id="nazwisko" maxlength="30"> <br> <br>
+    
+            Płeć: 
+            <input type="radio" id="kobieta" name="plec" value="kobieta">
+            <label for="kobieta">Kobieta</label>
+    
+            <input type="radio" id="me" name="plec" value="mężczyzna" checked>
+            <label for="me">Mężczyzna</label> <br> <br>
+    
+            <input type="radio" id="inna" name="inna" value="inna" disabled checked>
+            <label for="inna">Inna</label> <br> <br>
+    
+            <label for="ocena">Opinia: </label> <br>
+            <textarea class="input-form" name="ocena" id="ocena" cols="30" rows="7"></textarea> <br> <br>
+    
+            <input class="btn" type="reset" value="Wyczyść">
+            <input class="btn" type="submit" value="Wyślij"> <br> <br>
+    
+            <p style="font-size: 11pt;">* - Twoje nazwisko nie zostanie opublikowane</p>
+    
+          </form>
+      </div>
+
+      <div id="footer">
+        <h1>Paweł Brzuszkiewicz, 1TC</h1>
+      </div>
+
+</body>
+</html>
