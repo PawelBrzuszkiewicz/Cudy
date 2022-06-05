@@ -272,6 +272,7 @@ html, body
   display: inline-block;
   left: 0%;
   margin-top: -10px;
+  display: none;
 }
 
 .dropdown-content
@@ -319,20 +320,18 @@ html, body
 
 @media screen and (max-width: 600px) {
 
+  #header-h1
+  {
+    font-size: 36px;
+    top: 62%;
+  }
+
   .dropdown
   {
     position: absolute;
     display: inline-block;
     left: 88.6px;
     margin-top: -69.2px;
-  }
-
-  .dropdown2
-  {
-    position: absolute;
-    display: inline-block;
-    left: 0%;
-    margin-top: -451.4px;
   }
 
     #showcase
@@ -386,7 +385,7 @@ html, body
   {
     transform: scale(0.3);
     margin-left: -110px;
-    margin-top: -65px;
+    margin-top: -68px;
   }
 
   .topnav a:nth-child(8), .topnav a:nth-child(7), .topnav a:nth-child(6), .topnav a:nth-child(5)
