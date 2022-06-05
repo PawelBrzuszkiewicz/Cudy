@@ -93,7 +93,7 @@ html, body
 #showcase
 {
     width: 100%;
-    height: 550px;
+    min-height: 550px;
     background-color: lightseagreen;
     text-align: center;
     padding-top: 20px;
@@ -249,7 +249,64 @@ html, body
   padding-top: 3px;
 }
 
+.dropbtn
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20.5px 16px 20.5px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown
+{
+  position: absolute;
+  display: inline-block;
+  left: 0%;
+  margin-top: -10px;
+}
+
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover
+{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn
+{
+  background-color: #3e8e41;
+}
+
 @media screen and (max-width: 600px) {
+
+    #showcase
+    {
+      min-height: 200px;
+      padding-bottom: 30px;
+    }
+
     .container
     {
       max-width: calc(100% - 20px);
