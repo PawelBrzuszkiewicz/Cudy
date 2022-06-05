@@ -253,12 +253,20 @@ html, body
 {
   background-color: #04AA6D;
   color: white;
-  padding: 15px 20.5px 15px 20.5px;
+  padding: 15.2px 20.5px 14.2px 20.5px;
   font-size: 16px;
   border: none;
 }
 
 .dropdown
+{
+  position: absolute;
+  display: inline-block;
+  left: 0%;
+  margin-top: -10px;
+}
+
+.dropdown2
 {
   position: absolute;
   display: inline-block;
@@ -299,14 +307,32 @@ html, body
   background-color: #3e8e41;
 }
 
+.dropdown2:hover .dropdown-content
+{
+  display: block;
+}
+
+.dropdown2:hover .dropbtn
+{
+  background-color: #3e8e41;
+}
+
 @media screen and (max-width: 600px) {
 
   .dropdown
   {
     position: absolute;
     display: inline-block;
-    left: 89px;
-    margin-top: -69px;
+    left: 88.6px;
+    margin-top: -69.2px;
+  }
+
+  .dropdown2
+  {
+    position: absolute;
+    display: inline-block;
+    left: 0%;
+    margin-top: -451.4px;
   }
 
     #showcase
