@@ -258,7 +258,7 @@ html, body
 
     #plane
     {
-      width: 400px;
+      width: calc(100% - 20px);
     }
 
     .topnav a:not(:first-child)
