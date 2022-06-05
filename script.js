@@ -4,10 +4,12 @@ function change() {
     if (x.className === "topnav")
     {
       x.className += " responsive";
+      document.getElementsByClassName("dropdown")[0].className += "2";
     } 
     else
     {
       x.className = "topnav";
+      document.getElementsByClassName("dropdown2")[0].className = "dropdown";
     }
   }
 
